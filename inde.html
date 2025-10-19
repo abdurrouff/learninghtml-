@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Tutorial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #007acc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #007acc;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #555;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .example {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007acc;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #007acc;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .form-example {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007acc;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 HTML Learning Tutorial</h1>
+        <p>Welcome to your comprehensive HTML tutorial! This page will teach you HTML from the ground up.</p>
+
+        <h2>📋 Table of Contents</h2>
+        <ol>
+            <li><a href="#what-is-html">What is HTML?</a></li>
+            <li><a href="#basic-structure">Basic HTML Structure</a></li>
+            <li><a href="#headers">Headers and Text</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#tables">Tables</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#semantic">Semantic HTML</a></li>
+            <li><a href="#styling">Basic Styling</a></li>
+        </ol>
+
+        <section id="what-is-html">
+            <h2>1. What is HTML? 🌐</h2>
+            <p><strong>HTML (HyperText Markup Language)</strong> is the standard markup language for creating web pages. It uses tags to structure content and tell browsers how to display information.</p>
+            
+            <div class="example">
+                <h3>Key Points:</h3>
+                <ul>
+                    <li>HTML is not a programming language - it's a markup language</li>
+                    <li>It uses tags (like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>) to structure content</li>
+                    <li>Every HTML document needs a proper structure</li>
+                    <li>It works with CSS (styling) and JavaScript (functionality)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="basic-structure">
+            <h2>2. Basic HTML Structure 🏗️</h2>
+            <p>Every HTML document follows this basic structure:</p>
+            
+            <div class="example">
+                <h3>Essential HTML Elements:</h3>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code> - Tells the browser this is HTML5</li>
+                    <li><code>&lt;html&gt;</code> - Root element of the page</li>
+                    <li><code>&lt;head&gt;</code> - Contains metadata (title, styles, scripts)</li>
+                    <li><code>&lt;body&gt;</code> - Contains the visible content</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="headers">
+            <h2>3. Headers and Text 📝</h2>
+            <p>HTML provides 6 levels of headers and various text formatting options:</p>
+            
+            <h3>Header Levels:</h3>
+            <h1>This is H1 - Main Title</h1>
+            <h2>This is H2 - Section Title</h2>
+            <h3>This is H3 - Subsection</h3>
+            <h4>This is H4 - Smaller Header</h4>
+            <h5>This is H5 - Even Smaller</h5>
+            <h6>This is H6 - Smallest Header</h6>
+            
+            <h3>Text Formatting:</h3>
+            <p>This is a <strong>bold text</strong> and this is <em>italic text</em>.</p>
+            <p>You can also have <u>underlined text</u> and <mark>highlighted text</mark>.</p>
+            <p>Here's some <code>inline code</code> and a <a href="#links">link</a>.</p>
+            
+            <div class="example">
+                <h3>Common Text Tags:</h3>
+                <ul>
+                    <li><code>&lt;p&gt;</code> - Paragraph</li>
+                    <li><code>&lt;strong&gt;</code> or <code>&lt;b&gt;</code> - Bold text</li>
+                    <li><code>&lt;em&gt;</code> or <code>&lt;i&gt;</code> - Italic text</li>
+                    <li><code>&lt;u&gt;</code> - Underlined text</li>
+                    <li><code>&lt;mark&gt;</code> - Highlighted text</li>
+                    <li><code>&lt;code&gt;</code> - Inline code</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="lists">
+            <h2>4. Lists 📋</h2>
+            <p>HTML supports two main types of lists:</p>
+            
+            <h3>Unordered List (Bullet Points):</h3>
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item
+                    <ul>
+                        <li>Nested item 1</li>
+                        <li>Nested item 2</li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <h3>Ordered List (Numbered):</h3>
+            <ol>
+                <li>First step</li>
+                <li>Second step</li>
+                <li>Third step</li>
+            </ol>
+            
+            <div class="example">
+                <h3>List Tags:</h3>
+                <ul>
+                    <li><code>&lt;ul&gt;</code> - Unordered list</li>
+                    <li><code>&lt;ol&gt;</code> - Ordered list</li>
+                    <li><code>&lt;li&gt;</code> - List item (used in both types)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="links">
+            <h2>5. Links 🔗</h2>
+            <p>Links connect different pages and resources:</p>
+            
+            <h3>Different Types of Links:</h3>
+            <ul>
+                <li><a href="https://www.google.com" target="_blank">External link (opens in new tab)</a></li>
+                <li><a href="#headers">Internal link (jumps to section on same page)</a></li>
+                <li><a href="mailto:example@email.com">Email link</a></li>
+                <li><a href="tel:+1234567890">Phone link</a></li>
+            </ul>
+            
+            <div class="example">
+                <h3>Link Attributes:</h3>
+                <ul>
+                    <li><code>href</code> - The destination URL</li>
+                    <li><code>target="_blank"</code> - Opens in new tab</li>
+                    <li><code>title</code> - Tooltip text on hover</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="images">
+            <h2>6. Images 🖼️</h2>
+            <p>Images make web pages more engaging:</p>
+            
+            <h3>Image Example:</h3>
+            <p>Here's a placeholder image (you can replace with actual images):</p>
+            <img src="https://via.placeholder.com/300x200/007acc/ffffff?text=Sample+Image" alt="Sample placeholder image" style="max-width: 100%; height: auto; border-radius: 5px;">
+            
+            <div class="example">
+                <h3>Image Tag Attributes:</h3>
+                <ul>
+                    <li><code>src</code> - Path to the image file</li>
+                    <li><code>alt</code> - Alternative text (important for accessibility)</li>
+                    <li><code>width</code> and <code>height</code> - Image dimensions</li>
+                    <li><code>title</code> - Tooltip text</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="tables">
+            <h2>7. Tables 📊</h2>
+            <p>Tables organize data in rows and columns:</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>HTML Tag</th>
+                        <th>Purpose</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;table&gt;</code></td>
+                        <td>Creates a table</td>
+                        <td>Container for all table elements</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;tr&gt;</code></td>
+                        <td>Table row</td>
+                        <td>Each row of data</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;th&gt;</code></td>
+                        <td>Table header</td>
+                        <td>Column titles (bold by default)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;td&gt;</code></td>
+                        <td>Table data</td>
+                        <td>Individual cells</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="example">
+                <h3>Table Structure:</h3>
+                <p>Tables use a hierarchical structure: table → thead/tbody → tr → th/td</p>
+            </div>
+        </section>
+
+        <section id="forms">
+            <h2>8. Forms 📝</h2>
+            <p>Forms collect user input:</p>
+            
+            <div class="form-example">
+                <h3>Sample Contact Form:</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                    
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="1" max="120">
+                    
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="">Select a country</option>
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="ca">Canada</option>
+                        <option value="au">Australia</option>
+                    </select>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message"></textarea>
+                    
+                    <label>
+                        <input type="checkbox" name="newsletter"> Subscribe to newsletter
+                    </label>
+                    
+                    <button type="submit">Submit Form</button>
+                </form>
+            </div>
+            
+            <div class="example">
+                <h3>Common Form Elements:</h3>
+                <ul>
+                    <li><code>&lt;form&gt;</code> - Form container</li>
+                    <li><code>&lt;input&gt;</code> - Text, email, number, checkbox, radio inputs</li>
+                    <li><code>&lt;textarea&gt;</code> - Multi-line text input</li>
+                    <li><code>&lt;select&gt;</code> - Dropdown menu</li>
+                    <li><code>&lt;button&gt;</code> - Submit or action button</li>
+                    <li><code>&lt;label&gt;</code> - Labels for form elements</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="semantic">
+            <h2>9. Semantic HTML 🏷️</h2>
+            <p>Semantic HTML uses meaningful tags that describe their content:</p>
+            
+            <div class="example">
+                <h3>Semantic Elements:</h3>
+                <ul>
+                    <li><code>&lt;header&gt;</code> - Page or section header</li>
+                    <li><code>&lt;nav&gt;</code> - Navigation links</li>
+                    <li><code>&lt;main&gt;</code> - Main content area</li>
+                    <li><code>&lt;section&gt;</code> - Thematic grouping of content</li>
+                    <li><code>&lt;article&gt;</code> - Self-contained content</li>
+                    <li><code>&lt;aside&gt;</code> - Sidebar content</li>
+                    <li><code>&lt;footer&gt;</code> - Page or section footer</li>
+                </ul>
+            </div>
+            
+            <p><strong>Benefits of Semantic HTML:</strong></p>
+            <ul>
+                <li>Better accessibility for screen readers</li>
+                <li>Improved SEO (Search Engine Optimization)</li>
+                <li>Clearer code structure</li>
+                <li>Easier maintenance</li>
+            </ul>
+        </section>
+
+        <section id="styling">
+            <h2>10. Basic Styling 🎨</h2>
+            <p>While HTML structures content, CSS styles it. This page uses internal CSS in the <code>&lt;style&gt;</code> tag.</p>
+            
+            <div class="example">
+                <h3>CSS Basics:</h3>
+                <ul>
+                    <li><strong>Selectors:</strong> Target HTML elements (h1, .class, #id)</li>
+                    <li><strong>Properties:</strong> What to style (color, font-size, margin)</li>
+                    <li><strong>Values:</strong> How to style it (red, 16px, 20px)</li>
+                </ul>
+            </div>
+            
+            <h3>Three Ways to Add CSS:</h3>
+            <ol>
+                <li><strong>Inline:</strong> <code>&lt;h1 style="color: red;"&gt;</code></li>
+                <li><strong>Internal:</strong> <code>&lt;style&gt;</code> tag in <code>&lt;head&gt;</code></li>
+                <li><strong>External:</strong> Separate .css file linked with <code>&lt;link&gt;</code></li>
+            </ol>
+        </section>
+
+        <footer style="margin-top: 50px; padding-top: 20px; border-top: 2px solid #007acc; text-align: center; color: #666;">
+            <h2>🎉 Congratulations!</h2>
+            <p>You've learned the fundamentals of HTML! This page demonstrates all the concepts we covered.</p>
+            <p><strong>Next Steps:</strong></p>
+            <ul style="text-align: left; display: inline-block;">
+                <li>Practice creating your own HTML pages</li>
+                <li>Learn CSS for styling</li>
+                <li>Explore JavaScript for interactivity</li>
+                <li>Study responsive design</li>
+                <li>Learn about web accessibility</li>
+            </ul>
+            <p style="margin-top: 20px;">
+                <em>Remember: The best way to learn HTML is by building projects!</em>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
