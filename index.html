@@ -1,74 +1,65 @@
+<!-- FONT PROPERTIES
+| Property         | Description                        | Example                               |
+| ---------------- | ---------------------------------- | ------------------------------------- |
+| `font-family`    | Defines the typeface (font style). | `font-family: 'Poppins', sans-serif;` |
+| `font-size`      | Controls text size.                | `font-size: 16px;`                    |
+| `font-weight`    | Sets thickness (boldness).         | `font-weight: 700;`                   |
+| `font-style`     | Italic or normal.                  | `font-style: italic;`                 |
+| `line-height`    | Space between lines of text.       | `line-height: 1.5;`                   |
+| `letter-spacing` | Space between letters.             | `letter-spacing: 2px;`                |
+| `word-spacing`   | Space between words.               | `word-spacing: 5px;`                  |
+| `text-transform` | Uppercase, lowercase, capitalize.  | `text-transform: uppercase;`          | -->
+
+<!-- Text aligning and spacing -->
+<!-- | Property          | Description                    | Example                          |
+| ----------------- | ------------------------------ | -------------------------------- |
+| `text-align`      | Aligns text horizontally.      | `text-align: center;`            |
+| `text-decoration` | Adds underline, overline, etc. | `text-decoration: underline;`    |
+| `text-indent`     | Indents the first line.        | `text-indent: 30px;`             |
+| `text-shadow`     | Adds shadow to text.           | `text-shadow: 2px 2px 5px gray;` |
+| `color`           | Sets text color.               | `color: #333;`                   | -->
+
+
+
+<!-- CSS Positioning -->
+<!-- | Position Type | Description                                                    | Example Use                                |
+| ------------- | -------------------------------------------------------------- | ------------------------------------------ |
+| `static`      | Default — follows normal page flow.                            | Normal document layout.                    |
+| `relative`    | Moves element **relative to its normal position**.             | Small adjustments without breaking layout. |
+| `absolute`    | Moves element **relative to the nearest positioned ancestor**. | Tooltips, popups.                          |
+| `fixed`       | Stays in one spot **relative to the viewport**.                | Sticky navbar, back-to-top button.         |
+| `sticky`      | Behaves like relative until a scroll point, then sticks.       | Sticky headers or sidebars.                | -->
+
+<!-- FLEXBOX -->
+<!-- Flexbox (Flexible Box Layout) is a modern CSS layout model designed to easily align, distribute, and space elements inside a container — even when their sizes are unknown or dynamic. -->
+
+<!-- A. flex-direction
+Controls the direction of the main axis (how items are laid out).
+Value	
+row	
+row-reverse	
+column	
+column-reverse -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Judith's website</title>
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <form action="/signup" autocomplete="on">
-        <fieldset>
-          <legend>Create account</legend>
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+        <ul class="menu">
+          <!-- <li>Home</li>
+          <li>About</li> -->
+          <li>Contact</li>
+        </ul>
+      </nav>
       
-          <div>
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" placeholder="Jane Doe" required minlength="2" />
-          </div>
-      
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required autocomplete="email" />
-          </div>
-      
-          <div>
-            <label for="password">Password</label>
-            <input id="password" name="password" type="password" required minlength="8" autocomplete="new-password" />
-          </div>
-      
-          <div>
-            <span>Plan</span>
-            <label><input name="plan" type="radio" value="basic" required /> Basic</label>
-            <label><input name="plan" type="radio" value="pro" /> Pro</label>
-          </div>
-      
-          <div>
-            <label for="country">Country</label>
-            <select id="country" name="country" required>
-              <option value="">Select...</option>
-              <optgroup label="North America">
-                <option value="us">United States</option>
-                <option value="ca">Canada</option>
-              </optgroup>
-            </select>
-          </div>
-      
-          <div>
-            <label for="avatar">Profile photo</label>
-            <input id="avatar" name="avatar" type="file" accept="image/*" />
-          </div>
-      
-          <div>
-            <label for="bio">Bio</label>
-            <textarea id="bio" name="bio" rows="4" maxlength="200" placeholder="Tell us about yourself"></textarea>
-          </div>
-      
-          <div>
-            <label for="city">City (with suggestions)</label>
-            <input id="city" name="city" list="city-options" />
-            <datalist id="city-options">
-              <option value="New York"></option>
-              <option value="Toronto"></option>
-              <option value="London"></option>
-            </datalist>
-          </div>
-      
-          <div>
-            <button type="submit">Sign up</button>
-            <button type="reset">Reset</button>
-          </div>
-        </fieldset>
-      </form>
+
+    </div>
 </body>
 </html>
-
